@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 
 async function exportedHtml() {
@@ -16,6 +16,8 @@ test("exports the complete HGR project page", async () => {
   assert.match(html, /1\.18M/);
   assert.match(html, /RingDiv/);
   assert.match(html, /HGR-FM/);
+  assert.match(html, /GuacaMol FCD score \(higher is better\): 84\.4 vs 78\.3/);
+  assert.match(html, /RSG used throughout the main experiments and MIG reported as an ablation/);
 });
 
 test("prefixes public assets for the GitHub project subpath", async () => {
@@ -25,4 +27,21 @@ test("prefixes public assets for the GitHub project subpath", async () => {
   assert.match(html, /\/HGR-page\/logos\/imperial-wordmark\.svg/);
   assert.match(html, /\/HGR-page\/favicon\.svg/);
   assert.doesNotMatch(html, /(?:src|href)=["']\/(?:fig|logos|favicon\.svg)/);
+});
+
+test("keeps all section links available in the mobile navigation", async () => {
+  const html = await exportedHtml();
+  const cssFiles = await readdir(new URL("../out/_next/static/chunks/", import.meta.url));
+  const cssName = cssFiles.find((name) => name.endsWith(".css"));
+  assert.ok(cssName, "expected an exported stylesheet");
+  const css = await readFile(
+    new URL(`../out/_next/static/chunks/${cssName}`, import.meta.url),
+    "utf8",
+  );
+
+  for (const anchor of ["method", "ringdiv", "results", "foundation-model", "resources", "citation"]) {
+    assert.match(html, new RegExp(`href=["']#${anchor}["']`));
+  }
+  assert.match(css, /overflow-x:\s*auto/);
+  assert.doesNotMatch(css, /\.nav-links\s*\{[^}]*display:\s*none/);
 });

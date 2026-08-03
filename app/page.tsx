@@ -28,10 +28,10 @@ const metrics = [
     tone: "coral",
   },
   {
-    value: "5 / 5",
-    label: "FCD benchmark wins",
-    note: "Best rank across all evaluated sets",
-    source: "Table 1",
+    value: "1st",
+    label: "on FCD across five benchmarks",
+    note: "GuacaMol FCD score (higher is better): 84.4 vs 78.3",
+    source: "Abstract · Table 1 · SI tables",
     tone: "sky",
   },
   {
@@ -62,8 +62,10 @@ export default function Home() {
         <div className="nav-links">
           <a href="#method">Method</a>
           <a href="#ringdiv">RingDiv</a>
-          <a href="#results">Results</a>
+          <a href="#results">Generation</a>
+          <a href="#foundation-model">Foundation</a>
           <a href="#resources">Resources</a>
+          <a href="#citation">Citation</a>
         </div>
         <span className="nav-status">Preprint in preparation</span>
       </nav>
@@ -77,7 +79,7 @@ export default function Home() {
           </h1>
           <p className="hero-hook"><em>Higher-order</em> molecular topology, rewritten as a <em>rule sequence.</em></p>
           <p className="hero-deck">
-            HGR turns hierarchical higher-order molecular topology into compact,
+            HGR turns higher-order topology—such as ring systems and recurring motifs—into compact,
             losslessly decodable production-rule sequences—one representation for
             molecular generation and transferable learning.
           </p>
@@ -207,7 +209,8 @@ export default function Home() {
               </p>
               <p>
                 Two complementary lifting strategies—MIG and RSG—trade topological
-                expressiveness against how compact the resulting grammar is.
+                expressiveness against how compact the resulting grammar is, with RSG
+                used throughout the main experiments and MIG reported as an ablation.
               </p>
             </div>
             <figure>
@@ -338,7 +341,7 @@ export default function Home() {
               </figcaption>
             </figure>
             <div className="result-callouts">
-              <span><strong>5 / 5</strong> best FCD rank</span>
+              <span><strong>1st</strong> on FCD across five benchmarks</span>
               <span><strong>100%</strong> validity in all evaluated benchmarks</span>
             </div>
             <figure className="result-figure">
