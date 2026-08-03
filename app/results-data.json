@@ -1,0 +1,3023 @@
+{
+  "generationOrder": [
+    "QM9",
+    "MOSES",
+    "GuacaMol",
+    "ZINC250k",
+    "RingDiv300k"
+  ],
+  "generation": {
+    "QM9": {
+      "columns": [
+        "Validity ↑",
+        "Unique ↑",
+        "Novelty ↑",
+        "V.U.N. ↑",
+        "FCD ↓",
+        "NSPDK ↓",
+        "κBF ↓",
+        "κOR ↓"
+      ],
+      "rows": [
+        {
+          "method": "Training",
+          "featured": false,
+          "values": [
+            {
+              "value": "100.00 ± 0.00",
+              "best": false
+            },
+            {
+              "value": "99.99 ± 0.00",
+              "best": false
+            },
+            {
+              "value": "N/A",
+              "best": false
+            },
+            {
+              "value": "N/A",
+              "best": false
+            },
+            {
+              "value": "0.074 ± 0.004",
+              "best": false
+            },
+            {
+              "value": "0.0002 ± 0.0000",
+              "best": false
+            },
+            {
+              "value": "0.1337 ± 0.0560",
+              "best": false
+            },
+            {
+              "value": "0.2380 ± 0.0762",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "MiCaM",
+          "featured": false,
+          "values": [
+            {
+              "value": "99.93",
+              "best": false
+            },
+            {
+              "value": "93.89",
+              "best": false
+            },
+            {
+              "value": "83.25",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "1.045",
+              "best": false
+            },
+            {
+              "value": "0.001",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "MoFlow",
+          "featured": false,
+          "values": [
+            {
+              "value": "91.36 ± 1.23",
+              "best": false
+            },
+            {
+              "value": "98.65 ± 0.57",
+              "best": false
+            },
+            {
+              "value": "94.72 ± 0.77",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "4.467 ± 0.595",
+              "best": false
+            },
+            {
+              "value": "0.017 ± 0.003",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "EDP-GNN",
+          "featured": false,
+          "values": [
+            {
+              "value": "47.52 ± 3.60",
+              "best": false
+            },
+            {
+              "value": "99.25 ± 0.05",
+              "best": true
+            },
+            {
+              "value": "86.58 ± 1.85",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "2.680 ± 0.221",
+              "best": false
+            },
+            {
+              "value": "0.005 ± 0.001",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GraphEBM",
+          "featured": false,
+          "values": [
+            {
+              "value": "8.22 ± 2.24",
+              "best": false
+            },
+            {
+              "value": "97.90 ± 0.05",
+              "best": false
+            },
+            {
+              "value": "97.01 ± 0.17",
+              "best": true
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "6.143 ± 0.411",
+              "best": false
+            },
+            {
+              "value": "0.030 ± 0.004",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GDSS",
+          "featured": false,
+          "values": [
+            {
+              "value": "95.72 ± 1.94",
+              "best": false
+            },
+            {
+              "value": "98.46 ± 0.61",
+              "best": false
+            },
+            {
+              "value": "86.27 ± 2.29",
+              "best": false
+            },
+            {
+              "value": "86.48",
+              "best": true
+            },
+            {
+              "value": "2.900 ± 0.282",
+              "best": false
+            },
+            {
+              "value": "0.003 ± 0.000",
+              "best": false
+            },
+            {
+              "value": "0.9252",
+              "best": false
+            },
+            {
+              "value": "0.6012",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "DiGress",
+          "featured": false,
+          "values": [
+            {
+              "value": "99.19 ± 0.23",
+              "best": false
+            },
+            {
+              "value": "96.87 ± 0.24",
+              "best": false
+            },
+            {
+              "value": "71.69 ± 2.36",
+              "best": false
+            },
+            {
+              "value": "71.13",
+              "best": false
+            },
+            {
+              "value": "0.279 ± 0.008",
+              "best": false
+            },
+            {
+              "value": "0.0006 ± 0.0001",
+              "best": false
+            },
+            {
+              "value": "0.2511",
+              "best": false
+            },
+            {
+              "value": "0.3428",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "DeFoG",
+          "featured": false,
+          "values": [
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "96.61 ± 0.30",
+              "best": false
+            },
+            {
+              "value": "72.57 ± 1.89",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "0.268 ± 0.006",
+              "best": false
+            },
+            {
+              "value": "0.0005 ± 0.0001",
+              "best": false
+            },
+            {
+              "value": "0.1774",
+              "best": false
+            },
+            {
+              "value": "0.2856",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "Cometh",
+          "featured": false,
+          "values": [
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "96.75 ± 0.09",
+              "best": false
+            },
+            {
+              "value": "72.06 ± 0.19",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "0.248 ± 0.012",
+              "best": false
+            },
+            {
+              "value": "0.0005 ± 0.0001",
+              "best": false
+            },
+            {
+              "value": "0.2165",
+              "best": false
+            },
+            {
+              "value": "0.3137",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HOG-Diff",
+          "featured": false,
+          "values": [
+            {
+              "value": "98.74 ± 0.22",
+              "best": false
+            },
+            {
+              "value": "97.14 ± 0.11",
+              "best": false
+            },
+            {
+              "value": "75.12 ± 0.39",
+              "best": false
+            },
+            {
+              "value": "71.76 ± 0.19",
+              "best": false
+            },
+            {
+              "value": "0.172 ± 0.002",
+              "best": false
+            },
+            {
+              "value": "0.0003 ± 0.0000",
+              "best": true
+            },
+            {
+              "value": "0.1137 ± 0.0322",
+              "best": false
+            },
+            {
+              "value": "0.2277 ± 0.1214",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "MHG-VAE",
+          "featured": false,
+          "values": [
+            {
+              "value": "99.96 ± 0.03",
+              "best": false
+            },
+            {
+              "value": "94.41 ± 3.17",
+              "best": false
+            },
+            {
+              "value": "86.81 ± 1.29",
+              "best": false
+            },
+            {
+              "value": "81.98 ± 3.98",
+              "best": false
+            },
+            {
+              "value": "1.534 ± 0.191",
+              "best": false
+            },
+            {
+              "value": "0.0043 ± 0.0022",
+              "best": false
+            },
+            {
+              "value": "0.5236 ± 0.2707",
+              "best": false
+            },
+            {
+              "value": "0.3670 ± 0.2571",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-VAE (MIG)",
+          "featured": true,
+          "values": [
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "94.25 ± 0.12",
+              "best": false
+            },
+            {
+              "value": "71.56 ± 1.06",
+              "best": false
+            },
+            {
+              "value": "67.45 ± 0.94",
+              "best": false
+            },
+            {
+              "value": "0.119 ± 0.006",
+              "best": false
+            },
+            {
+              "value": "0.0003 ± 0.0000",
+              "best": true
+            },
+            {
+              "value": "0.2193 ± 0.0731",
+              "best": false
+            },
+            {
+              "value": "0.0894 ± 0.0287",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-VAE (RSG)",
+          "featured": true,
+          "values": [
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "96.59 ± 0.27",
+              "best": false
+            },
+            {
+              "value": "73.15 ± 0.26",
+              "best": false
+            },
+            {
+              "value": "70.66 ± 0.14",
+              "best": false
+            },
+            {
+              "value": "0.110 ± 0.004",
+              "best": true
+            },
+            {
+              "value": "0.0003 ± 0.0000",
+              "best": true
+            },
+            {
+              "value": "0.0476 ± 0.0261",
+              "best": false
+            },
+            {
+              "value": "0.1009 ± 0.0532",
+              "best": false
+            }
+          ]
+        }
+      ],
+      "source": "contents/blocks/tab_qm9.tex"
+    },
+    "MOSES": {
+      "columns": [
+        "Validity ↑",
+        "Unique ↑",
+        "Novelty ↑",
+        "V.U.N. ↑",
+        "FCD ↓",
+        "Filters ↑",
+        "SNN ↑",
+        "Scaffold ↑",
+        "κBF ↓",
+        "κOR ↓"
+      ],
+      "rows": [
+        {
+          "method": "Training",
+          "featured": false,
+          "values": [
+            {
+              "value": "100.0 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "0.518 ± 0.007",
+              "best": false
+            },
+            {
+              "value": "100.0 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "0.586 ± 0.000",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "0.1138 ± 0.0303",
+              "best": false
+            },
+            {
+              "value": "0.1365 ± 0.01592",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GraphINVENT",
+          "featured": false,
+          "values": [
+            {
+              "value": "96.4",
+              "best": false
+            },
+            {
+              "value": "99.8",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "1.22",
+              "best": false
+            },
+            {
+              "value": "95.0",
+              "best": false
+            },
+            {
+              "value": "0.54",
+              "best": false
+            },
+            {
+              "value": "12.7",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "DiGress",
+          "featured": false,
+          "values": [
+            {
+              "value": "85.7",
+              "best": false
+            },
+            {
+              "value": "100.0",
+              "best": true
+            },
+            {
+              "value": "95.0",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "1.19",
+              "best": false
+            },
+            {
+              "value": "97.1",
+              "best": false
+            },
+            {
+              "value": "0.52",
+              "best": false
+            },
+            {
+              "value": "14.8",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "DisCo",
+          "featured": false,
+          "values": [
+            {
+              "value": "88.3",
+              "best": false
+            },
+            {
+              "value": "100.0",
+              "best": true
+            },
+            {
+              "value": "97.7",
+              "best": true
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "1.44",
+              "best": false
+            },
+            {
+              "value": "95.6",
+              "best": false
+            },
+            {
+              "value": "0.50",
+              "best": false
+            },
+            {
+              "value": "15.1",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "Cometh",
+          "featured": false,
+          "values": [
+            {
+              "value": "90.5",
+              "best": false
+            },
+            {
+              "value": "99.9",
+              "best": false
+            },
+            {
+              "value": "92.6",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "1.27",
+              "best": false
+            },
+            {
+              "value": "99.1",
+              "best": true
+            },
+            {
+              "value": "0.54",
+              "best": false
+            },
+            {
+              "value": "16.0",
+              "best": true
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "DeFoG",
+          "featured": false,
+          "values": [
+            {
+              "value": "92.8",
+              "best": false
+            },
+            {
+              "value": "99.9",
+              "best": false
+            },
+            {
+              "value": "92.1",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "1.95",
+              "best": false
+            },
+            {
+              "value": "98.9",
+              "best": false
+            },
+            {
+              "value": "0.55",
+              "best": true
+            },
+            {
+              "value": "14.4",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HoG-Diff",
+          "featured": false,
+          "values": [
+            {
+              "value": "99.6 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "99.9 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "89.1 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "88.7 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "0.937 ± 0.0125",
+              "best": false
+            },
+            {
+              "value": "96.6 ± 0.2",
+              "best": false
+            },
+            {
+              "value": "0.519 ± 0.001",
+              "best": false
+            },
+            {
+              "value": "8.0 ± 0.4",
+              "best": false
+            },
+            {
+              "value": "0.1365 ± 0.0196",
+              "best": false
+            },
+            {
+              "value": "0.1625 ± 0.0200",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-VAE (RSG)",
+          "featured": true,
+          "values": [
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "95.5 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "95.5 ± 0.1",
+              "best": true
+            },
+            {
+              "value": "0.676 ± 0.0078",
+              "best": false
+            },
+            {
+              "value": "97.8 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "0.519 ± 0.000",
+              "best": false
+            },
+            {
+              "value": "11.4 ± 0.5",
+              "best": false
+            },
+            {
+              "value": "0.2860 ± 0.0624",
+              "best": false
+            },
+            {
+              "value": "0.1348 ± 0.0286",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-LDF (RSG)",
+          "featured": true,
+          "values": [
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "95.2 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "95.2 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "0.626 ± 0.0087",
+              "best": true
+            },
+            {
+              "value": "98.0 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "0.523 ± 0.001",
+              "best": false
+            },
+            {
+              "value": "10.5 ± 0.3",
+              "best": false
+            },
+            {
+              "value": "0.2587 ± 0.0329",
+              "best": false
+            },
+            {
+              "value": "0.0761 ± 0.0141",
+              "best": false
+            }
+          ]
+        }
+      ],
+      "source": "contents/blocks/tab_moses.tex"
+    },
+    "GuacaMol": {
+      "columns": [
+        "Validity ↑",
+        "Unique ↑",
+        "Novelty ↑",
+        "V.U.N. ↑",
+        "FCD score ↑",
+        "KL score ↑",
+        "κBF ↓",
+        "κOR ↓"
+      ],
+      "rows": [
+        {
+          "method": "Training",
+          "featured": false,
+          "values": [
+            {
+              "value": "100.0 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "N/A",
+              "best": false
+            },
+            {
+              "value": "N/A",
+              "best": false
+            },
+            {
+              "value": "96.12 ± 0.09",
+              "best": false
+            },
+            {
+              "value": "99.71 ± 0.00",
+              "best": false
+            },
+            {
+              "value": "0.1276 ± 0.0819",
+              "best": false
+            },
+            {
+              "value": "0.0573 ± 0.0304",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "DiGress",
+          "featured": false,
+          "values": [
+            {
+              "value": "85.2",
+              "best": false
+            },
+            {
+              "value": "100.0",
+              "best": true
+            },
+            {
+              "value": "99.9",
+              "best": true
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "68.0",
+              "best": false
+            },
+            {
+              "value": "92.9",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "Disco",
+          "featured": false,
+          "values": [
+            {
+              "value": "86.6",
+              "best": false
+            },
+            {
+              "value": "86.6",
+              "best": false
+            },
+            {
+              "value": "86.5",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "59.7",
+              "best": false
+            },
+            {
+              "value": "92.6",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "Cometh",
+          "featured": false,
+          "values": [
+            {
+              "value": "98.9",
+              "best": false
+            },
+            {
+              "value": "98.9",
+              "best": false
+            },
+            {
+              "value": "97.6",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "72.7",
+              "best": false
+            },
+            {
+              "value": "96.7",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "DeFoG",
+          "featured": false,
+          "values": [
+            {
+              "value": "99.0",
+              "best": false
+            },
+            {
+              "value": "99.0",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "97.9",
+              "best": false
+            },
+            {
+              "value": "73.8",
+              "best": false
+            },
+            {
+              "value": "97.7",
+              "best": true
+            },
+            {
+              "value": "-",
+              "best": false
+            },
+            {
+              "value": "-",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HOG-Diff",
+          "featured": false,
+          "values": [
+            {
+              "value": "99.1 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "97.0 ± 0.3",
+              "best": false
+            },
+            {
+              "value": "95.9 ± 0.2",
+              "best": false
+            },
+            {
+              "value": "78.3 ± 0.3",
+              "best": false
+            },
+            {
+              "value": "96.9 ± 0.3",
+              "best": false
+            },
+            {
+              "value": "0.1726 ± 0.0937",
+              "best": false
+            },
+            {
+              "value": "0.0944 ± 0.0423",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "SMILES-VAE",
+          "featured": false,
+          "values": [
+            {
+              "value": "91.0 ± 0.2",
+              "best": false
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "99.4 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "90.6 ± 0.2",
+              "best": false
+            },
+            {
+              "value": "80.7 ± 0.5",
+              "best": false
+            },
+            {
+              "value": "92.7 ± 1.0",
+              "best": false
+            },
+            {
+              "value": "0.3840 ± 0.1309",
+              "best": false
+            },
+            {
+              "value": "0.2824 ± 0.0890",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "SELFIES-VAE",
+          "featured": false,
+          "values": [
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "99.7 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "99.7 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "39.9 ± 0.3",
+              "best": false
+            },
+            {
+              "value": "88.0 ± 0.6",
+              "best": false
+            },
+            {
+              "value": "0.5711 ± 0.0620",
+              "best": false
+            },
+            {
+              "value": "0.2381 ± 0.0315",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-VAE (RSG)",
+          "featured": true,
+          "values": [
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "99.4 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "99.4 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "83.7 ± 0.3",
+              "best": false
+            },
+            {
+              "value": "93.8 ± 0.7",
+              "best": false
+            },
+            {
+              "value": "0.2518 ± 0.0428",
+              "best": false
+            },
+            {
+              "value": "0.1516 ± 0.0483",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-LDF (RSG)",
+          "featured": true,
+          "values": [
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "98.9 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "98.9 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "84.4 ± 0.3",
+              "best": true
+            },
+            {
+              "value": "95.7 ± 0.4",
+              "best": false
+            },
+            {
+              "value": "0.2974 ± 0.0415",
+              "best": false
+            },
+            {
+              "value": "0.1151 ± 0.0048",
+              "best": false
+            }
+          ]
+        }
+      ],
+      "source": "contents/blocks/tab_guacamol.tex"
+    },
+    "ZINC250k": {
+      "columns": [
+        "Validity ↑",
+        "Unique ↑",
+        "Novelty ↑",
+        "V.U.N. ↑",
+        "FCD ↓",
+        "NSPDK ↓",
+        "κBF ↓",
+        "κOR ↓"
+      ],
+      "rows": [
+        {
+          "method": "Training",
+          "featured": false,
+          "values": [
+            {
+              "value": "100.00 ± 0.00",
+              "best": false
+            },
+            {
+              "value": "99.98 ± 0.01",
+              "best": false
+            },
+            {
+              "value": "N/A",
+              "best": false
+            },
+            {
+              "value": "N/A",
+              "best": false
+            },
+            {
+              "value": "0.201 ± 0.005",
+              "best": false
+            },
+            {
+              "value": "0.0001 ± 0.0000",
+              "best": false
+            },
+            {
+              "value": "0.1007 ± 0.0563",
+              "best": false
+            },
+            {
+              "value": "0.0478 ± 0.0190",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "MiCaM",
+          "featured": false,
+          "values": [
+            {
+              "value": "100.00",
+              "best": true
+            },
+            {
+              "value": "88.48",
+              "best": false
+            },
+            {
+              "value": "99.98",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "32.395",
+              "best": false
+            },
+            {
+              "value": "0.166",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "MoFlow",
+          "featured": false,
+          "values": [
+            {
+              "value": "63.11 ± 5.17",
+              "best": false
+            },
+            {
+              "value": "99.99 ± 0.01",
+              "best": false
+            },
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "20.931 ± 0.184",
+              "best": false
+            },
+            {
+              "value": "0.046 ± 0.002",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "EDP-GNN",
+          "featured": false,
+          "values": [
+            {
+              "value": "82.97 ± 2.73",
+              "best": false
+            },
+            {
+              "value": "99.79 ± 0.08",
+              "best": false
+            },
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "16.737 ± 1.300",
+              "best": false
+            },
+            {
+              "value": "0.049 ± 0.006",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GraphEBM",
+          "featured": false,
+          "values": [
+            {
+              "value": "5.29 ± 3.83",
+              "best": false
+            },
+            {
+              "value": "98.79 ± 0.15",
+              "best": false
+            },
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "35.471 ± 5.331",
+              "best": false
+            },
+            {
+              "value": "0.212 ± 0.075",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GDSS",
+          "featured": false,
+          "values": [
+            {
+              "value": "97.01 ± 0.77",
+              "best": false
+            },
+            {
+              "value": "99.64 ± 0.13",
+              "best": false
+            },
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "14.656 ± 0.680",
+              "best": false
+            },
+            {
+              "value": "0.019 ± 0.001",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "DiGress",
+          "featured": false,
+          "values": [
+            {
+              "value": "94.99 ± 2.55",
+              "best": false
+            },
+            {
+              "value": "99.97 ± 0.01",
+              "best": false
+            },
+            {
+              "value": "99.99 ± 0.01",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "3.482 ± 0.147",
+              "best": false
+            },
+            {
+              "value": "0.0021 ± 0.0004",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "DeFoG",
+          "featured": false,
+          "values": [
+            {
+              "value": "99.22 ± 0.08",
+              "best": false
+            },
+            {
+              "value": "99.99 ± 0.01",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "1.425 ± 0.022",
+              "best": false
+            },
+            {
+              "value": "0.0008 ± 0.0001",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            },
+            {
+              "value": "--",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HOG-Diff",
+          "featured": false,
+          "values": [
+            {
+              "value": "98.56 ± 0.12",
+              "best": false
+            },
+            {
+              "value": "99.96 ± 0.02",
+              "best": false
+            },
+            {
+              "value": "99.53 ± 0.08",
+              "best": false
+            },
+            {
+              "value": "97.93 ± 0.05",
+              "best": false
+            },
+            {
+              "value": "1.633 ± 0.017",
+              "best": false
+            },
+            {
+              "value": "0.0015 ± 0.0016",
+              "best": false
+            },
+            {
+              "value": "0.1901 ± 0.0695",
+              "best": false
+            },
+            {
+              "value": "0.0981 ± 0.0411",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "MHG-VAE",
+          "featured": false,
+          "values": [
+            {
+              "value": "100.00 ± 0.00",
+              "best": false
+            },
+            {
+              "value": "99.19 ± 0.02",
+              "best": false
+            },
+            {
+              "value": "100.00 ± 0.01",
+              "best": true
+            },
+            {
+              "value": "99.18 ± 0.01",
+              "best": false
+            },
+            {
+              "value": "5.219 ± 0.093",
+              "best": false
+            },
+            {
+              "value": "0.0123 ± 0.0015",
+              "best": false
+            },
+            {
+              "value": "4.9820 ± 0.1680",
+              "best": false
+            },
+            {
+              "value": "2.7055 ± 0.1268",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-VAE (MIG)",
+          "featured": true,
+          "values": [
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "99.99 ± 0.01",
+              "best": false
+            },
+            {
+              "value": "99.98 ± 0.01",
+              "best": false
+            },
+            {
+              "value": "99.97 ± 0.01",
+              "best": false
+            },
+            {
+              "value": "0.648 ± 0.011",
+              "best": false
+            },
+            {
+              "value": "0.0009 ± 0.0000",
+              "best": false
+            },
+            {
+              "value": "0.3113 ± 0.0846",
+              "best": false
+            },
+            {
+              "value": "0.1321 ± 0.0410",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-VAE (RSG)",
+          "featured": true,
+          "values": [
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "99.99 ± 0.00",
+              "best": false
+            },
+            {
+              "value": "99.99 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "0.726 ± 0.017",
+              "best": false
+            },
+            {
+              "value": "0.0006 ± 0.0000",
+              "best": false
+            },
+            {
+              "value": "0.1894 ± 0.0680",
+              "best": false
+            },
+            {
+              "value": "0.0711 ± 0.0614",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-LDF (RSG)",
+          "featured": true,
+          "values": [
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "100.00 ± 0.00",
+              "best": true
+            },
+            {
+              "value": "99.98 ± 0.01",
+              "best": false
+            },
+            {
+              "value": "99.98 ± 0.01",
+              "best": false
+            },
+            {
+              "value": "0.595 ± 0.012",
+              "best": true
+            },
+            {
+              "value": "0.0005 ± 0.0000",
+              "best": true
+            },
+            {
+              "value": "0.1316 ± 0.0481",
+              "best": false
+            },
+            {
+              "value": "0.0636 ± 0.0283",
+              "best": false
+            }
+          ]
+        }
+      ],
+      "source": "contents/blocks/tab_zinc250k.tex"
+    },
+    "RingDiv300k": {
+      "columns": [
+        "Validity ↑",
+        "Unique ↑",
+        "Novelty ↑",
+        "V.U.N. ↑",
+        "KL score ↑",
+        "FCD ↓",
+        "NSPDK ↓",
+        "SA dist. ↓",
+        "κBF ↓",
+        "κOR ↓"
+      ],
+      "rows": [
+        {
+          "method": "Training",
+          "featured": false,
+          "values": [
+            {
+              "value": "100.0 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "N/A",
+              "best": false
+            },
+            {
+              "value": "N/A",
+              "best": false
+            },
+            {
+              "value": "99.8 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "0.1737 ± 0.0024",
+              "best": false
+            },
+            {
+              "value": "0.0001 ± 0.0000",
+              "best": false
+            },
+            {
+              "value": "0.0123 ± 0.0040",
+              "best": false
+            },
+            {
+              "value": "0.1312 ± 0.0577",
+              "best": false
+            },
+            {
+              "value": "0.1203 ± 0.0644",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "DiGress",
+          "featured": false,
+          "values": [
+            {
+              "value": "98.90 ± 0.04",
+              "best": false
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "98.90 ± 0.04",
+              "best": false
+            },
+            {
+              "value": "98.27 ± 0.09",
+              "best": false
+            },
+            {
+              "value": "0.6300 ± 0.0110",
+              "best": false
+            },
+            {
+              "value": "0.00041 ± 0.00006",
+              "best": true
+            },
+            {
+              "value": "0.4171 ± 0.0247",
+              "best": false
+            },
+            {
+              "value": "0.1021 ± 0.0316",
+              "best": false
+            },
+            {
+              "value": "0.2656 ± 0.0582",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "DeFoG",
+          "featured": false,
+          "values": [
+            {
+              "value": "98.27 ± 0.04",
+              "best": false
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "98.27 ± 0.04",
+              "best": false
+            },
+            {
+              "value": "98.71 ± 0.06",
+              "best": false
+            },
+            {
+              "value": "0.8575 ± 0.0087",
+              "best": false
+            },
+            {
+              "value": "0.00109 ± 0.00002",
+              "best": false
+            },
+            {
+              "value": "0.1298 ± 0.0081",
+              "best": false
+            },
+            {
+              "value": "0.4735 ± 0.0373",
+              "best": false
+            },
+            {
+              "value": "0.4045 ± 0.0088",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HoG-Diff",
+          "featured": false,
+          "values": [
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "99.9 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "99.58 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "99.57 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "98.15 ± 0.10",
+              "best": false
+            },
+            {
+              "value": "0.9250 ± 0.0236",
+              "best": false
+            },
+            {
+              "value": "0.00134 ± 0.00026",
+              "best": false
+            },
+            {
+              "value": "0.1435 ± 0.0333",
+              "best": false
+            },
+            {
+              "value": "0.1810 ± 0.0326",
+              "best": false
+            },
+            {
+              "value": "0.1729 ± 0.03247",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "SMILES-VAE",
+          "featured": false,
+          "values": [
+            {
+              "value": "88.1 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "88.2 ± 0.1",
+              "best": false
+            },
+            {
+              "value": "97.6 ± 0.0",
+              "best": false
+            },
+            {
+              "value": "0.6642 ± 0.0156",
+              "best": false
+            },
+            {
+              "value": "0.00072 ± 0.00005",
+              "best": false
+            },
+            {
+              "value": "0.1653 ± 0.0117",
+              "best": false
+            },
+            {
+              "value": "0.1556 ± 0.0061",
+              "best": false
+            },
+            {
+              "value": "0.2375 ± 0.0502",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "SELFIES-VAE",
+          "featured": false,
+          "values": [
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "92.8 ± 0.4",
+              "best": false
+            },
+            {
+              "value": "2.4266 ± 0.0526",
+              "best": false
+            },
+            {
+              "value": "0.00286 ± 0.00005",
+              "best": false
+            },
+            {
+              "value": "0.6077 ± 0.0071",
+              "best": false
+            },
+            {
+              "value": "0.6891 ± 0.0687",
+              "best": false
+            },
+            {
+              "value": "0.3874 ± 0.0738",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-VAE (RSG)",
+          "featured": true,
+          "values": [
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "98.1 ± 0.4",
+              "best": false
+            },
+            {
+              "value": "0.5882 ± 0.0070",
+              "best": false
+            },
+            {
+              "value": "0.00147 ± 0.00010",
+              "best": false
+            },
+            {
+              "value": "0.1095 ± 0.0090",
+              "best": false
+            },
+            {
+              "value": "0.5260 ± 0.1119",
+              "best": false
+            },
+            {
+              "value": "0.2583 ± 0.0911",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-LDF (RSG)",
+          "featured": true,
+          "values": [
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "100.0 ± 0.0",
+              "best": true
+            },
+            {
+              "value": "99.2 ± 0.1",
+              "best": true
+            },
+            {
+              "value": "0.4652 ± 0.0093",
+              "best": true
+            },
+            {
+              "value": "0.00106 ± 0.00010",
+              "best": false
+            },
+            {
+              "value": "0.0983 ± 0.0050",
+              "best": true
+            },
+            {
+              "value": "0.6093 ± 0.1040",
+              "best": false
+            },
+            {
+              "value": "0.1431 ± 0.0104",
+              "best": false
+            }
+          ]
+        }
+      ],
+      "source": "contents/blocks/tab_ringdiv300k.tex"
+    }
+  },
+  "foundation": {
+    "columns": [
+      "BBBP",
+      "Tox21",
+      "ToxCast",
+      "SIDER",
+      "ClinTox",
+      "HIV",
+      "BACE",
+      "Average ↑"
+    ],
+    "protocolOrder": [
+      "Probing",
+      "Full fine-tuning"
+    ],
+    "protocols": {
+      "Probing": [
+        {
+          "method": "Infomax",
+          "featured": false,
+          "values": [
+            {
+              "value": "60.8 ± 0.38",
+              "best": false
+            },
+            {
+              "value": "67.0 ± 0.40",
+              "best": false
+            },
+            {
+              "value": "58.3 ± 0.24",
+              "best": false
+            },
+            {
+              "value": "58.2 ± 0.76",
+              "best": false
+            },
+            {
+              "value": "62.6 ± 0.28",
+              "best": false
+            },
+            {
+              "value": "71.3 ± 1.36",
+              "best": false
+            },
+            {
+              "value": "65.1 ± 0.67",
+              "best": false
+            },
+            {
+              "value": "63.33",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "EdgePred",
+          "featured": false,
+          "values": [
+            {
+              "value": "52.7 ± 1.45",
+              "best": false
+            },
+            {
+              "value": "63.0 ± 0.77",
+              "best": false
+            },
+            {
+              "value": "54.1 ± 0.39",
+              "best": false
+            },
+            {
+              "value": "51.7 ± 0.99",
+              "best": false
+            },
+            {
+              "value": "48.2 ± 5.46",
+              "best": false
+            },
+            {
+              "value": "65.2 ± 1.06",
+              "best": false
+            },
+            {
+              "value": "58.6 ± 1.76",
+              "best": false
+            },
+            {
+              "value": "56.21",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "AttrMasking",
+          "featured": false,
+          "values": [
+            {
+              "value": "51.8 ± 0.23",
+              "best": false
+            },
+            {
+              "value": "69.3 ± 0.04",
+              "best": false
+            },
+            {
+              "value": "57.7 ± 0.08",
+              "best": false
+            },
+            {
+              "value": "51.3 ± 0.09",
+              "best": false
+            },
+            {
+              "value": "54.5 ± 0.44",
+              "best": false
+            },
+            {
+              "value": "60.5 ± 0.31",
+              "best": false
+            },
+            {
+              "value": "61.8 ± 0.62",
+              "best": false
+            },
+            {
+              "value": "58.13",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "ContextPred",
+          "featured": false,
+          "values": [
+            {
+              "value": "58.8 ± 0.57",
+              "best": false
+            },
+            {
+              "value": "68.3 ± 0.24",
+              "best": false
+            },
+            {
+              "value": "58.8 ± 0.36",
+              "best": false
+            },
+            {
+              "value": "59.2 ± 0.19",
+              "best": false
+            },
+            {
+              "value": "40.0 ± 1.51",
+              "best": false
+            },
+            {
+              "value": "67.0 ± 0.62",
+              "best": false
+            },
+            {
+              "value": "59.6 ± 2.53",
+              "best": false
+            },
+            {
+              "value": "58.81",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GraphCL",
+          "featured": false,
+          "values": [
+            {
+              "value": "63.0 ± 0.29",
+              "best": false
+            },
+            {
+              "value": "67.6 ± 0.39",
+              "best": false
+            },
+            {
+              "value": "57.4 ± 0.48",
+              "best": false
+            },
+            {
+              "value": "52.8 ± 0.95",
+              "best": false
+            },
+            {
+              "value": "54.7 ± 5.10",
+              "best": false
+            },
+            {
+              "value": "64.8 ± 1.69",
+              "best": false
+            },
+            {
+              "value": "66.3 ± 0.29",
+              "best": false
+            },
+            {
+              "value": "60.94",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GraphLoG",
+          "featured": false,
+          "values": [
+            {
+              "value": "54.5 ± 0.30",
+              "best": false
+            },
+            {
+              "value": "66.8 ± 0.17",
+              "best": false
+            },
+            {
+              "value": "57.4 ± 0.17",
+              "best": false
+            },
+            {
+              "value": "58.0 ± 0.58",
+              "best": false
+            },
+            {
+              "value": "57.6 ± 1.29",
+              "best": false
+            },
+            {
+              "value": "65.2 ± 0.54",
+              "best": false
+            },
+            {
+              "value": "72.4 ± 0.65",
+              "best": false
+            },
+            {
+              "value": "61.70",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GraphMAE",
+          "featured": false,
+          "values": [
+            {
+              "value": "56.5 ± 0.41",
+              "best": false
+            },
+            {
+              "value": "66.7 ± 0.45",
+              "best": false
+            },
+            {
+              "value": "57.6 ± 0.10",
+              "best": false
+            },
+            {
+              "value": "52.0 ± 0.82",
+              "best": false
+            },
+            {
+              "value": "44.3 ± 0.57",
+              "best": false
+            },
+            {
+              "value": "60.5 ± 0.54",
+              "best": false
+            },
+            {
+              "value": "61.8 ± 5.53",
+              "best": false
+            },
+            {
+              "value": "57.06",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GraphMVP",
+          "featured": false,
+          "values": [
+            {
+              "value": "57.9 ± 0.68",
+              "best": false
+            },
+            {
+              "value": "66.9 ± 0.17",
+              "best": false
+            },
+            {
+              "value": "58.5 ± 0.09",
+              "best": false
+            },
+            {
+              "value": "56.0 ± 1.16",
+              "best": false
+            },
+            {
+              "value": "42.7 ± 1.99",
+              "best": false
+            },
+            {
+              "value": "67.1 ± 0.83",
+              "best": false
+            },
+            {
+              "value": "65.3 ± 0.20",
+              "best": false
+            },
+            {
+              "value": "59.20",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "MORE",
+          "featured": false,
+          "values": [
+            {
+              "value": "67.9 ± 0.28",
+              "best": false
+            },
+            {
+              "value": "70.6 ± 0.33",
+              "best": false
+            },
+            {
+              "value": "62.2 ± 0.16",
+              "best": false
+            },
+            {
+              "value": "60.7 ± 0.28",
+              "best": false
+            },
+            {
+              "value": "63.5 ± 1.26",
+              "best": false
+            },
+            {
+              "value": "72.8 ± 0.32",
+              "best": false
+            },
+            {
+              "value": "80.0 ± 0.62",
+              "best": false
+            },
+            {
+              "value": "68.24",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-FM",
+          "featured": true,
+          "values": [
+            {
+              "value": "74.4 ± 0.96",
+              "best": true
+            },
+            {
+              "value": "78.5 ± 0.57",
+              "best": true
+            },
+            {
+              "value": "68.9 ± 0.11",
+              "best": true
+            },
+            {
+              "value": "63.0 ± 0.58",
+              "best": true
+            },
+            {
+              "value": "89.7 ± 1.59",
+              "best": true
+            },
+            {
+              "value": "76.9 ± 1.02",
+              "best": true
+            },
+            {
+              "value": "84.1 ± 0.56",
+              "best": true
+            },
+            {
+              "value": "76.51",
+              "best": true
+            }
+          ]
+        }
+      ],
+      "Full fine-tuning": [
+        {
+          "method": "Infomax",
+          "featured": false,
+          "values": [
+            {
+              "value": "68.0 ± 1.05",
+              "best": false
+            },
+            {
+              "value": "75.0 ± 0.55",
+              "best": false
+            },
+            {
+              "value": "62.4 ± 0.57",
+              "best": false
+            },
+            {
+              "value": "59.7 ± 0.47",
+              "best": false
+            },
+            {
+              "value": "71.1 ± 3.88",
+              "best": false
+            },
+            {
+              "value": "76.8 ± 1.38",
+              "best": false
+            },
+            {
+              "value": "76.8 ± 1.32",
+              "best": false
+            },
+            {
+              "value": "69.97",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "EdgePred",
+          "featured": false,
+          "values": [
+            {
+              "value": "65.3 ± 1.96",
+              "best": false
+            },
+            {
+              "value": "76.3 ± 0.26",
+              "best": false
+            },
+            {
+              "value": "63.6 ± 0.28",
+              "best": false
+            },
+            {
+              "value": "61.3 ± 0.54",
+              "best": false
+            },
+            {
+              "value": "64.5 ± 2.67",
+              "best": false
+            },
+            {
+              "value": "75.7 ± 1.05",
+              "best": false
+            },
+            {
+              "value": "79.9 ± 1.27",
+              "best": false
+            },
+            {
+              "value": "69.51",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "AttrMasking",
+          "featured": false,
+          "values": [
+            {
+              "value": "63.4 ± 1.45",
+              "best": false
+            },
+            {
+              "value": "76.4 ± 0.19",
+              "best": false
+            },
+            {
+              "value": "63.4 ± 0.52",
+              "best": false
+            },
+            {
+              "value": "60.0 ± 0.87",
+              "best": false
+            },
+            {
+              "value": "71.1 ± 2.46",
+              "best": false
+            },
+            {
+              "value": "76.3 ± 0.28",
+              "best": false
+            },
+            {
+              "value": "79.7 ± 0.47",
+              "best": false
+            },
+            {
+              "value": "70.04",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "ContextPred",
+          "featured": false,
+          "values": [
+            {
+              "value": "67.1 ± 0.81",
+              "best": false
+            },
+            {
+              "value": "74.4 ± 0.12",
+              "best": false
+            },
+            {
+              "value": "63.7 ± 0.12",
+              "best": false
+            },
+            {
+              "value": "60.9 ± 0.78",
+              "best": false
+            },
+            {
+              "value": "59.0 ± 1.99",
+              "best": false
+            },
+            {
+              "value": "76.6 ± 0.45",
+              "best": false
+            },
+            {
+              "value": "79.1 ± 2.13",
+              "best": false
+            },
+            {
+              "value": "68.69",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GraphCL",
+          "featured": false,
+          "values": [
+            {
+              "value": "68.0 ± 2.05",
+              "best": false
+            },
+            {
+              "value": "74.5 ± 0.12",
+              "best": false
+            },
+            {
+              "value": "62.4 ± 0.59",
+              "best": false
+            },
+            {
+              "value": "59.2 ± 1.12",
+              "best": false
+            },
+            {
+              "value": "75.3 ± 3.67",
+              "best": false
+            },
+            {
+              "value": "76.3 ± 1.09",
+              "best": false
+            },
+            {
+              "value": "76.8 ± 0.36",
+              "best": false
+            },
+            {
+              "value": "70.36",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GraphLoG",
+          "featured": false,
+          "values": [
+            {
+              "value": "66.8 ± 2.55",
+              "best": false
+            },
+            {
+              "value": "74.7 ± 0.25",
+              "best": false
+            },
+            {
+              "value": "62.4 ± 0.55",
+              "best": false
+            },
+            {
+              "value": "59.6 ± 0.67",
+              "best": false
+            },
+            {
+              "value": "64.2 ± 1.27",
+              "best": false
+            },
+            {
+              "value": "76.6 ± 0.77",
+              "best": false
+            },
+            {
+              "value": "82.3 ± 0.42",
+              "best": false
+            },
+            {
+              "value": "69.51",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GraphMAE",
+          "featured": false,
+          "values": [
+            {
+              "value": "68.0 ± 2.54",
+              "best": false
+            },
+            {
+              "value": "75.6 ± 0.27",
+              "best": false
+            },
+            {
+              "value": "63.4 ± 0.14",
+              "best": false
+            },
+            {
+              "value": "60.2 ± 0.49",
+              "best": false
+            },
+            {
+              "value": "70.8 ± 4.15",
+              "best": false
+            },
+            {
+              "value": "76.6 ± 0.87",
+              "best": false
+            },
+            {
+              "value": "82.1 ± 1.40",
+              "best": false
+            },
+            {
+              "value": "70.96",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "GraphMVP",
+          "featured": false,
+          "values": [
+            {
+              "value": "71.3 ± 1.13",
+              "best": false
+            },
+            {
+              "value": "75.0 ± 0.37",
+              "best": false
+            },
+            {
+              "value": "63.4 ± 0.26",
+              "best": false
+            },
+            {
+              "value": "62.9 ± 0.29",
+              "best": true
+            },
+            {
+              "value": "68.2 ± 5.95",
+              "best": false
+            },
+            {
+              "value": "75.8 ± 1.44",
+              "best": false
+            },
+            {
+              "value": "78.8 ± 4.61",
+              "best": false
+            },
+            {
+              "value": "70.77",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "MORE",
+          "featured": false,
+          "values": [
+            {
+              "value": "71.9 ± 0.94",
+              "best": false
+            },
+            {
+              "value": "75.6 ± 0.54",
+              "best": false
+            },
+            {
+              "value": "64.6 ± 0.58",
+              "best": false
+            },
+            {
+              "value": "60.9 ± 0.62",
+              "best": false
+            },
+            {
+              "value": "81.0 ± 0.65",
+              "best": false
+            },
+            {
+              "value": "77.0 ± 0.74",
+              "best": false
+            },
+            {
+              "value": "82.8 ± 1.33",
+              "best": false
+            },
+            {
+              "value": "73.40",
+              "best": false
+            }
+          ]
+        },
+        {
+          "method": "HGR-FM",
+          "featured": true,
+          "values": [
+            {
+              "value": "74.3 ± 1.08",
+              "best": true
+            },
+            {
+              "value": "79.0 ± 0.41",
+              "best": true
+            },
+            {
+              "value": "70.8 ± 0.12",
+              "best": true
+            },
+            {
+              "value": "62.1 ± 1.05",
+              "best": false
+            },
+            {
+              "value": "89.4 ± 1.00",
+              "best": true
+            },
+            {
+              "value": "77.5 ± 0.21",
+              "best": true
+            },
+            {
+              "value": "84.0 ± 0.43",
+              "best": true
+            },
+            {
+              "value": "76.73",
+              "best": true
+            }
+          ]
+        }
+      ]
+    },
+    "source": "contents/blocks/tab_FM_transfer_combined.tex"
+  }
+}
