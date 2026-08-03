@@ -1517,6 +1517,17 @@ img {
   font-size: 9px;
 }
 
+.resource-list a {
+  color: inherit;
+  text-decoration-color: rgba(255, 255, 255, .4);
+  text-underline-offset: 5px;
+}
+
+.resource-list a:hover,
+.resource-list a:focus-visible {
+  color: var(--mint);
+}
+
 .resource-list small {
   color: #bdd1ce;
   font-family: var(--mono);

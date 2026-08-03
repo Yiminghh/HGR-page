@@ -87,9 +87,14 @@ export default function App() {
             <span className="button primary unavailable" aria-disabled="true">
               Paper <small>coming soon</small>
             </span>
-            <span className="button unavailable" aria-disabled="true">
-              Code <small>coming soon</small>
-            </span>
+            <a
+              className="button"
+              href="https://github.com/circle-group/HGR"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Code <small>GitHub ↗</small>
+            </a>
             <span className="button unavailable" aria-disabled="true">
               RingDiv dataset <small>coming soon</small>
             </span>
@@ -395,7 +400,13 @@ export default function App() {
         </div>
         <div className="resource-list">
           <span><b>01</b> Paper <small>preprint coming soon</small></span>
-          <span><b>02</b> Reference code <small>release in preparation</small></span>
+          <span>
+            <b>02</b>
+            <a href="https://github.com/circle-group/HGR" target="_blank" rel="noreferrer">
+              Reference code
+            </a>
+            <small>GitHub repository ↗</small>
+          </span>
           <span><b>03</b> RingDiv dataset <small>hosting to be confirmed</small></span>
           <span><b>04</b> Checkpoints <small>release in preparation</small></span>
         </div>

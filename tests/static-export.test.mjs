@@ -27,6 +27,11 @@ test("keeps the paper-backed claims and all section anchors", async () => {
   }
 });
 
+test("links the public code repository", async () => {
+  const source = await read("../src/App.tsx");
+  assert.match(source, /https:\/\/github\.com\/circle-group\/HGR/);
+});
+
 test("keeps all benchmark tables available", async () => {
   const results = JSON.parse(await read("../src/results-data.json"));
 
