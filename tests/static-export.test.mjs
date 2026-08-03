@@ -2,46 +2,47 @@ import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 
-async function exportedHtml() {
-  return readFile(new URL("../out/index.html", import.meta.url), "utf8");
-}
+const read = (path) => readFile(new URL(path, import.meta.url), "utf8");
 
-test("exports the complete HGR project page", async () => {
-  const html = await exportedHtml();
+test("builds a relocatable static shell", async () => {
+  const html = await read("../dist/index.html");
 
   assert.match(html, /<title>HGR — Higher-Order Molecular Grammars<\/title>/i);
-  assert.match(html, /Higher-Order Molecular Grammars/);
-  assert.match(html, /Higher-order.*molecular topology.*rule sequence/is);
-  assert.match(html, /100%/);
-  assert.match(html, /1\.18M/);
-  assert.match(html, /RingDiv/);
-  assert.match(html, /HGR-FM/);
-  assert.match(html, /GuacaMol FCD score \(higher is better\): 84\.4 vs 78\.3/);
-  assert.match(html, /RSG used throughout the main experiments and MIG reported as an ablation/);
+  assert.match(html, /href="\.\/favicon\.svg"/);
+  assert.match(html, /src="\.\/assets\/[^"']+\.js"/);
+  assert.match(html, /href="\.\/assets\/[^"']+\.css"/);
+  assert.doesNotMatch(html, /\/HGR-page\//);
+  assert.doesNotMatch(html, /_next/);
+  assert.doesNotMatch(html, /localhost|\/Users\//);
 });
 
-test("prefixes public assets for the GitHub project subpath", async () => {
-  const html = await exportedHtml();
+test("keeps the paper-backed claims and all section anchors", async () => {
+  const source = await read("../src/App.tsx");
 
-  assert.match(html, /\/HGR-page\/fig\/hgr-overview\.webp/);
-  assert.match(html, /\/HGR-page\/logos\/imperial-wordmark\.svg/);
-  assert.match(html, /\/HGR-page\/favicon\.svg/);
-  assert.doesNotMatch(html, /(?:src|href)=["']\/(?:fig|logos|favicon\.svg)/);
-});
-
-test("keeps all section links available in the mobile navigation", async () => {
-  const html = await exportedHtml();
-  const cssFiles = await readdir(new URL("../out/_next/static/chunks/", import.meta.url));
-  const cssName = cssFiles.find((name) => name.endsWith(".css"));
-  assert.ok(cssName, "expected an exported stylesheet");
-  const css = await readFile(
-    new URL(`../out/_next/static/chunks/${cssName}`, import.meta.url),
-    "utf8",
-  );
-
+  assert.match(source, /Higher-Order Molecular Grammars/);
+  assert.match(source, /GuacaMol FCD score \(higher is better\): 84\.4 vs 78\.3/);
+  assert.match(source, /RSG\s+used throughout the main experiments and MIG reported as an ablation/);
   for (const anchor of ["method", "ringdiv", "results", "foundation-model", "resources", "citation"]) {
-    assert.match(html, new RegExp(`href=["']#${anchor}["']`));
+    assert.match(source, new RegExp(`href=["']#${anchor}["']`));
   }
+});
+
+test("keeps all benchmark tables available", async () => {
+  const results = JSON.parse(await read("../src/results-data.json"));
+
+  assert.deepEqual(results.generationOrder, ["QM9", "MOSES", "GuacaMol", "ZINC250k", "RingDiv300k"]);
+  assert.deepEqual(results.foundation.protocolOrder, ["Probing", "Full fine-tuning"]);
+  for (const dataset of results.generationOrder) {
+    assert.ok(results.generation[dataset].rows.length > 0, `${dataset} should include result rows`);
+  }
+});
+
+test("keeps mobile navigation scrollable", async () => {
+  const cssFiles = await readdir(new URL("../dist/assets/", import.meta.url));
+  const cssName = cssFiles.find((name) => name.endsWith(".css"));
+  assert.ok(cssName, "expected a generated stylesheet");
+  const css = await read(`../dist/assets/${cssName}`);
+
   assert.match(css, /overflow-x:\s*auto/);
   assert.doesNotMatch(css, /\.nav-links\s*\{[^}]*display:\s*none/);
 });

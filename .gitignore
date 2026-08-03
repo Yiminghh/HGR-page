@@ -13,10 +13,15 @@
 # testing
 /coverage
 
-# next.js
+# static build
+/dist/
+
+# legacy build output from the previous Next/vinext prototype
 /.next/
 /.vinext/
 /out/
+/next-env.d.ts
+*.tsbuildinfo
 
 # misc
 .DS_Store
@@ -31,12 +36,5 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
-# vercel
-.vercel
-
-# typescript
-next-env.d.ts
-/dist/
-/.wrangler/
 /outputs/
 /work/

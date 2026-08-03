@@ -1,6 +1,6 @@
 import { FoundationResultsTable, GenerationResultsTable } from "./interactive-results";
 
-const assetPath = (path: string) => `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
+const assetPath = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 
 const authors: { name: string; affiliation: string; url?: string }[] = [
   { name: "Yiming Huang", affiliation: "1", url: "https://yimingh.top/" },
@@ -43,7 +43,7 @@ const metrics = [
   },
 ];
 
-export default function Home() {
+export default function App() {
   return (
     <main>
       <div className="prototype-ribbon">
