@@ -95,9 +95,9 @@ export default function App() {
             >
               Code <small>GitHub ↗</small>
             </a>
-            <span className="button unavailable" aria-disabled="true">
-              RingDiv dataset <small>coming soon</small>
-            </span>
+            <a className="button" href="https://github.com/circle-group/HGR/releases/tag/RingDiv-v1.0" target="_blank" rel="noreferrer">
+              RingDiv dataset <small>Download ↗</small>
+            </a>
             <span className="button unavailable" aria-disabled="true">
               BibTeX <small>· coming soon</small>
             </span>
@@ -307,7 +307,7 @@ export default function App() {
             <div><dt>299,819</dt><dd>RingDiv300k subset</dd></div>
             <div><dt>RDI</dt><dd>ring diversity index</dd></div>
           </dl>
-          <span className="inline-resource">Dataset release <b>coming soon</b></span>
+          <a className="inline-resource" href="https://github.com/circle-group/HGR/releases/tag/RingDiv-v1.0" target="_blank" rel="noreferrer">Dataset release <b>Download ↗</b></a>
         </div>
         <figure className="paper-figure ringdiv-figure">
           <div className="figure-label">Figure 02 · Benchmark landscape</div>
@@ -407,7 +407,7 @@ export default function App() {
             </a>
             <small>GitHub repository ↗</small>
           </span>
-          <span><b>03</b> RingDiv dataset <small>hosting to be confirmed</small></span>
+          <span><b>03</b> <a href="https://github.com/circle-group/HGR/releases/tag/RingDiv-v1.0" target="_blank" rel="noreferrer">RingDiv dataset</a> <small>GitHub Release ↗</small></span>
           <span><b>04</b> Checkpoints <small>release in preparation</small></span>
         </div>
       </section>
