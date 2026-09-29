@@ -298,13 +298,14 @@ export default function App() {
           <p className="eyebrow coral"><span /> RingDiv benchmark</p>
           <h2>A harder benchmark for ring-rich chemical space.</h2>
           <p>
-            RingDiv is constructed from approximately 143 million candidates and
-            enriches rare but informative ring topologies through quota-first sampling
-            and diversity-aware selection.
+            RingDiv is a molecular dataset curated from approximately 143 million
+            candidate compounds to capture diverse ring topologies, including spiro,
+            fused, and bridged ring systems. It provides a benchmark for evaluating
+            molecular generation in ring-rich chemical space.
           </p>
           <dl className="ring-stats">
             <div><dt>1.18M</dt><dd>curated molecules</dd></div>
-            <div><dt>299,819</dt><dd>RingDiv300k subset</dd></div>
+            <div><dt>299,819</dt><dd>RingDiv300k molecules</dd></div>
             <div><dt>RDI</dt><dd>ring diversity index</dd></div>
           </dl>
           <a className="inline-resource" href="https://github.com/circle-group/HGR/releases/tag/RingDiv-v1.0" target="_blank" rel="noreferrer">Dataset release <b>Download ↗</b></a>
