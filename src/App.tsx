@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FoundationResultsTable, GenerationResultsTable } from "./interactive-results";
 
 const assetPath = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
@@ -11,6 +12,22 @@ const authors: { name: string; affiliation: string; url?: string }[] = [
   { name: "Jure Leskovec", affiliation: "3", url: "https://cs.stanford.edu/~jure/" },
   { name: "Tolga Birdal", affiliation: "1", url: "https://tolgabirdal.github.io/" },
 ];
+
+const paper = {
+  title: "Higher-Order Molecular Grammars for Generative and Foundation Models in Chemistry",
+  arxiv: "https://arxiv.org/abs/2610.02186",
+  pdf: "https://arxiv.org/pdf/2610.02186",
+};
+
+const bibtex = `@misc{huang2026higherorder,
+  title={Higher-Order Molecular Grammars for Generative and Foundation Models in Chemistry},
+  author={Huang, Yiming and Zeng, Yujie and Dwivedi, Vijay Prakash and Foti, Simone and Wang, Jianmin and Leskovec, Jure and Birdal, Tolga},
+  year={2026},
+  eprint={2610.02186},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2610.02186}
+}`;
 
 const metrics = [
   {
@@ -44,12 +61,16 @@ const metrics = [
 ];
 
 export default function App() {
+  const [bibtexCopied, setBibtexCopied] = useState(false);
+
+  const copyBibtex = async () => {
+    await navigator.clipboard.writeText(bibtex);
+    setBibtexCopied(true);
+    window.setTimeout(() => setBibtexCopied(false), 1800);
+  };
+
   return (
     <main>
-      <div className="prototype-ribbon">
-        Visual direction prototype <span>·</span> Links and selected copy are placeholders
-      </div>
-
       <nav className="site-nav" aria-label="Primary navigation">
         <a className="brand" href="#top" aria-label="HGR home">
           <span className="brand-mark" aria-hidden="true">
@@ -67,12 +88,10 @@ export default function App() {
           <a href="#resources">Resources</a>
           <a href="#citation">Citation</a>
         </div>
-        <span className="nav-status">Preprint in preparation</span>
       </nav>
 
       <header className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span /> Higher-order Grammar Representation · HGR</p>
           <h1>
             Higher-Order Molecular Grammars
             <span>{" "}for Generative and Foundation Models in Chemistry</span>
@@ -84,9 +103,9 @@ export default function App() {
             molecular generation and transferable learning.
           </p>
           <div className="hero-actions" aria-label="Project resources">
-            <span className="button primary unavailable" aria-disabled="true">
-              Paper <small>coming soon</small>
-            </span>
+            <a className="button primary" href={paper.arxiv} target="_blank" rel="noreferrer">
+              Paper <small>arXiv</small>
+            </a>
             <a
               className="button"
               href="https://github.com/circle-group/HGR"
@@ -98,9 +117,9 @@ export default function App() {
             <a className="button" href="https://github.com/circle-group/HGR/releases/tag/RingDiv-v1.0" target="_blank" rel="noreferrer">
               RingDiv dataset <small>Download ↗</small>
             </a>
-            <span className="button unavailable" aria-disabled="true">
-              BibTeX <small>· coming soon</small>
-            </span>
+            <a className="button" href="#citation">
+              BibTeX <small>citation</small>
+            </a>
           </div>
           <p className="authors">
             {authors.map((author, index) => (
@@ -295,7 +314,6 @@ export default function App() {
 
       <section className="content-section ringdiv-section" id="ringdiv">
         <div className="ringdiv-copy">
-          <p className="eyebrow coral"><span /> RingDiv benchmark</p>
           <h2>A harder benchmark for ring-rich chemical space.</h2>
           <p>
             RingDiv is a molecular dataset curated from approximately 143 million
@@ -400,7 +418,11 @@ export default function App() {
           <h2>Everything needed to inspect, reproduce, and extend HGR.</h2>
         </div>
         <div className="resource-list">
-          <span><b>01</b> Paper <small>preprint coming soon</small></span>
+          <span>
+            <b>01</b>
+            <a href={paper.arxiv} target="_blank" rel="noreferrer">Paper</a>
+            <small>arXiv:2610.02186</small>
+          </span>
           <span>
             <b>02</b>
             <a href="https://github.com/circle-group/HGR" target="_blank" rel="noreferrer">
@@ -414,17 +436,52 @@ export default function App() {
       </section>
 
       <section className="citation-section" id="citation">
-        <div className="citation-copy">
-          <p className="eyebrow"><span /> Publication</p>
-          <h2>Citation</h2>
-          <p>Citation metadata will be available with the public preprint.</p>
+        <div className="paper-layout">
+          <a
+            className="paper-preview"
+            href={paper.pdf}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open the HGR paper PDF"
+          >
+            <img
+              src={assetPath("/fig/hgr-paper-first-page.webp")}
+              alt="First page of the HGR paper"
+              loading="lazy"
+            />
+          </a>
+
+          <article className="paper-details">
+            <p className="eyebrow"><span /> Publication</p>
+            <h2>Paper</h2>
+            <h3>{paper.title}</h3>
+            <p className="paper-authors">{authors.map((author) => author.name).join(", ")}</p>
+            <p className="paper-meta">arXiv:2610.02186 · cs.LG · 2026</p>
+            <div className="paper-links" aria-label="Paper links">
+              <a className="button primary" href={paper.arxiv} target="_blank" rel="noreferrer">arXiv</a>
+              <a className="button" href={paper.pdf} target="_blank" rel="noreferrer">PDF</a>
+            </div>
+          </article>
         </div>
+
+        <article className="citation-copy">
+          <div className="citation-heading">
+            <div>
+              <p className="eyebrow"><span /> Cite HGR</p>
+              <h2>Citation</h2>
+            </div>
+            <button className="copy-button" type="button" onClick={copyBibtex}>
+              {bibtexCopied ? "Copied" : "Copy BibTeX"}
+            </button>
+          </div>
+          <pre><code>{bibtex}</code></pre>
+        </article>
       </section>
 
       <footer>
         <a className="brand footer-brand" href="#top"><span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>HGR</a>
         <p>Higher-order topology, made learnable.</p>
-        <p>Visual prototype · August 2026</p>
+        <p>arXiv preprint · October 2026</p>
       </footer>
     </main>
   );

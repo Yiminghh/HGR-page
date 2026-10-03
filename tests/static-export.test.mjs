@@ -8,7 +8,7 @@ test("builds a relocatable static shell", async () => {
   const html = await read("../dist/index.html");
 
   assert.match(html, /<title>HGR — Higher-Order Molecular Grammars<\/title>/i);
-  assert.match(html, /href="\.\/favicon\.svg"/);
+  assert.match(html, /<link rel="icon" type="image\/png" href="\.\/favicon\.png"/);
   assert.match(html, /src="\.\/assets\/[^"']+\.js"/);
   assert.match(html, /href="\.\/assets\/[^"']+\.css"/);
   assert.doesNotMatch(html, /\/HGR-page\//);
@@ -30,6 +30,22 @@ test("keeps the paper-backed claims and all section anchors", async () => {
 test("links the public code repository", async () => {
   const source = await read("../src/App.tsx");
   assert.match(source, /https:\/\/github\.com\/circle-group\/HGR/);
+});
+
+test("publishes the complete arXiv paper and citation metadata", async () => {
+  const source = await read("../src/App.tsx");
+  const paperPreview = await readFile(
+    new URL("../public/fig/hgr-paper-first-page.webp", import.meta.url),
+  );
+
+  assert.match(source, /https:\/\/arxiv\.org\/abs\/2610\.02186/);
+  assert.match(source, /https:\/\/arxiv\.org\/pdf\/2610\.02186/);
+  assert.match(source, /\/fig\/hgr-paper-first-page\.webp/);
+  assert.ok(paperPreview.byteLength > 100_000, "expected a high-resolution paper preview");
+  assert.match(source, /Higher-Order Molecular Grammars for Generative and Foundation Models in Chemistry/);
+  assert.match(source, /author=\{Huang, Yiming and Zeng, Yujie and Dwivedi, Vijay Prakash and Foti, Simone and Wang, Jianmin and Leskovec, Jure and Birdal, Tolga\}/);
+  assert.match(source, /eprint=\{2610\.02186\}/);
+  assert.doesNotMatch(source, /Citation metadata will be available|Paper <small>coming soon/);
 });
 
 test("keeps all benchmark tables available", async () => {
