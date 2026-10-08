@@ -43,8 +43,13 @@ test("publishes the complete arXiv paper and citation metadata", async () => {
   assert.match(source, /\/fig\/hgr-paper-first-page\.webp/);
   assert.ok(paperPreview.byteLength > 100_000, "expected a high-resolution paper preview");
   assert.match(source, /Higher-Order Molecular Grammars for Generative and Foundation Models in Chemistry/);
+  assert.match(source, /@article\{huang2026higher,/);
   assert.match(source, /author=\{Huang, Yiming and Zeng, Yujie and Dwivedi, Vijay Prakash and Foti, Simone and Wang, Jianmin and Leskovec, Jure and Birdal, Tolga\}/);
-  assert.match(source, /eprint=\{2610\.02186\}/);
+  assert.match(source, /journal=\{arXiv preprint arXiv:2610\.02186\}/);
+  assert.doesNotMatch(source, /<p className="eyebrow"><span \/> (?:Publication|Cite HGR)<\/p>/);
+  assert.match(source, /className="button primary paper-pdf-button" href=\{paper\.pdf\}/);
+  assert.match(source, /<span>View PDF<\/span>/);
+  assert.doesNotMatch(source, />arXiv<\/a>\s*<a[^>]*>PDF<\/a>/);
   assert.doesNotMatch(source, /Citation metadata will be available|Paper <small>coming soon/);
 });
 

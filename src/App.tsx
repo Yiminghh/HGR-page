@@ -19,14 +19,11 @@ const paper = {
   pdf: "https://arxiv.org/pdf/2610.02186",
 };
 
-const bibtex = `@misc{huang2026higherorder,
+const bibtex = `@article{huang2026higher,
   title={Higher-Order Molecular Grammars for Generative and Foundation Models in Chemistry},
   author={Huang, Yiming and Zeng, Yujie and Dwivedi, Vijay Prakash and Foti, Simone and Wang, Jianmin and Leskovec, Jure and Birdal, Tolga},
-  year={2026},
-  eprint={2610.02186},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2610.02186}
+  journal={arXiv preprint arXiv:2610.02186},
+  year={2026}
 }`;
 
 const metrics = [
@@ -452,14 +449,19 @@ export default function App() {
           </a>
 
           <article className="paper-details">
-            <p className="eyebrow"><span /> Publication</p>
             <h2>Paper</h2>
             <h3>{paper.title}</h3>
             <p className="paper-authors">{authors.map((author) => author.name).join(", ")}</p>
             <p className="paper-meta">arXiv:2610.02186 · cs.LG · 2026</p>
             <div className="paper-links" aria-label="Paper links">
-              <a className="button primary" href={paper.arxiv} target="_blank" rel="noreferrer">arXiv</a>
-              <a className="button" href={paper.pdf} target="_blank" rel="noreferrer">PDF</a>
+              <a className="button primary paper-pdf-button" href={paper.pdf} target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.75 3.75h6.5l4 4v12.5H6.75z" />
+                  <path d="M13.25 3.75v4h4" />
+                  <path d="M9.25 13.25h5.5M9.25 16.25h4" />
+                </svg>
+                <span>View PDF</span>
+              </a>
             </div>
           </article>
         </div>
@@ -467,7 +469,6 @@ export default function App() {
         <article className="citation-copy">
           <div className="citation-heading">
             <div>
-              <p className="eyebrow"><span /> Cite HGR</p>
               <h2>Citation</h2>
             </div>
             <button className="copy-button" type="button" onClick={copyBibtex}>
